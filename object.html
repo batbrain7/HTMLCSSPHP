@@ -1,0 +1,27 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function person(name,age){
+			this.name = name;
+			this.age = age;
+			//to tell the object to use the function below
+			this.yearsretire = yearsleft;
+		}
+		function yearsleft(){
+			var numyears = 65 - this.age;
+			return numyears;
+		}
+		mayank = {name:"Mayank Aggarwal",age:19};
+	</script>
+</head>	
+<body>
+	<script type="text/javascript">
+		var mohit = new person("mohit",19);
+		var uddish = new person("uddish",20);
+
+		document.write(mohit.name + "<br/>" + uddish.age);
+		document.write("<br/>" + mayank.name + "<br/>" + mayank.age + "<br/>")
+		document.write(mohit.yearsretire());
+	</script>
+</body>
+</html>

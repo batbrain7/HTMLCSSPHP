@@ -1,0 +1,49 @@
+<html>
+<head></head>
+<body>
+	<script type="text/javascript">
+		var people = new Array("Mohit","Shubham","Sourabh","Allen","Shubham V","Deepak","Aditya","Utkarsh","Vasu","Rijul","Rohan");
+
+		var peeps = new Array(3);
+		peeps[0] = 1;peeps[1] = 2;peeps[2] = 3;
+
+		var stuff = new Array();
+
+		var pie = prompt("Enter your name : ","");
+		document.write("Hello" + pie);
+
+		for(x=0;x<people.length;x++) {
+			document.write(people[x] + "<br/>");
+		}
+
+		//people.pop();
+		//people.reverse();
+
+		people.push("Krishna","Ashish","Nikhil");
+
+		people.sort();
+
+		var string = people.join("-");
+		document.write(string);
+		
+		// for(i=0;i<4;i++) {
+		// 	stuff[i] = prompt("Enter anything");
+		// }
+
+		// var string = stuff.join("-");
+		// document.write(string);
+
+	function timeprint(){
+		var now  = new Date();
+		var hours = now.getHours();
+		var mins = now.getMinutes();
+		var seconds = now.getSeconds();
+
+		document.write(hours + ":" + mins + ":" + seconds + "<br/>");
+	}
+
+	 setInterval("timeprint()",1000);
+
+	</script>
+</body> 
+</html>

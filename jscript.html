@@ -1,0 +1,85 @@
+<html>
+<head></head>
+<body>
+	<script type="text/javascript">
+
+	function popup(){
+		var x = "open variable";
+		alert("Opened a popup  " +x);
+	}
+	function meatball(x){
+		alert("i love " + x);
+	}
+	function myfunc(one,two){
+		document.write("I want to " + one + " with <br />" + two);
+		popup();
+		 var c = one + two;
+		 return c;
+	}
+		//document.write("This is it");
+		//document.write("This is still better");
+		//declaring a variable
+		var x = 69;
+		document.write(x + "<br />");
+		x++;
+		document.write(x + "<br />");
+		x/=3;
+		document.write(x + "<br />");
+		x*=4;
+		document.write(x + "<br />");
+		//var _xnum = 41.2345234;
+		//meatball("Raven Alexis");
+		//meatball(69);
+		//myfunc(x,"Raven Alexis");
+		document.write("  " + myfunc(1,2));
+
+		var firstname = "mohit";
+		var secondname	= "kumar";
+		if(firstname == "mohit"){
+			if(secondname == "kuamr"){
+				document.write("My work is done here <br />");
+			} else {
+				document.write("This is shit");
+			}
+		}
+
+		document.write("<br/><br /><br />");
+
+		var girl = "Dylan";
+
+		switch(girl) {
+			case "Kayden" :
+				document.write("My favourite");
+				break;
+			case "Chanel" :
+				document.write("My Brunette favourite");
+				break;	
+			default :
+				document.write(girl + " is my all time favourite");		
+		}
+
+		document.write("<br/><br /><br />");
+
+		// for(i=0;i<50;i++){
+		// 	document.write("I want a girl to fuck <br />");
+		// }
+
+
+
+		//meatball(x);
+		//only letters underscore and number but can start only with letter ou underscore. 
+		//document.write(x); 
+		//var tuna = "John said ,\"do i love it\" ";//escape sequence
+		//document.write(tuna);
+		//var word = false;
+		//var fourth = null;//null variable
+		//document.write(x  + "is a number");
+		//popup();
+	</script>
+	<form>
+		<input type="button" value="click me" onclick="popup();
+		alert('This is nice');alert('This is real good');"/>
+	</form>
+
+</body>	
+</html>

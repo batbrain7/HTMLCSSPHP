@@ -1,0 +1,30 @@
+<html>
+<head>
+<script type="text/javascript">
+	function validator() {
+		if(document.theform.thebox.checked)
+			alert("The box is checked");
+		 else 
+			document.write("The box isn't checked!!");
+	}
+</script>
+</head>
+<body>
+<form name = "myform">
+	Username : <input type = "text" name="username"/><br/>
+	Password : <input type = "password" name="password"/><br/>
+	<input type="submit" value = "Submit"/>
+</form>	
+<form name = "theform">
+	<input type= "checkbox" name="thebox"/>
+	<input type="button" value="Press Me!" onClick="validator()"/>
+</form>
+	<!-- <script type="text/javascript">
+	// 	var x = document.forms[0].length;
+	// 	document.write(x);
+	// 	var x1 = document.myform.elements[0].name;
+	// 	var x1 = document.myform.password.name;
+	// 	document.write(x1);
+	// </script>-->
+</body>	
+</html>
